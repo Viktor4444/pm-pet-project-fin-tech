@@ -10,5 +10,5 @@
 | TO-BE journey | [processes/to-be-loan-journey.md](processes/to-be-loan-journey.md) | Согласовано (v1.0) |
 | BRD | [brd/brd-credit-journey.md](brd/brd-credit-journey.md) | Рамка v1.0 согласована (часть входов — Ожидает данных) |
 | Backlog / эпики | [backlog/jira-epics-mvp.md](backlog/jira-epics-mvp.md) | Согласовано (v1.0) |
-| Риски | [risks/](risks/) | Папка готова |
+| Риски | [risks/risk-register.md](risks/risk-register.md) | Согласовано (v1.0) |
 | Коммуникации | [communications/](communications/) | Папка готова |

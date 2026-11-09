@@ -1,3 +1,7 @@
-# Реестр рисков — Credit Journey
+# Риски — Credit Journey
 
-**Status:** Content coming after review
+| Документ | Описание |
+|----------|----------|
+| [risk-register.md](risk-register.md) | Реестр рисков MVP (R01–R12), шкала, связь с эпиками и BRD Q# |
+
+**Версия реестра:** 1.0.

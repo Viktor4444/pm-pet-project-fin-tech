@@ -36,8 +36,8 @@
 | [docs/risks/](docs/risks/) | Реестр рисков |
 | [docs/communications/](docs/communications/) | План коммуникаций |
 
-Документы публикуются по мере согласования. В финальном виде: [one-pager](docs/one-pager.md), [стейкхолдеры и RACI](docs/stakeholders-raci.md), [AS-IS](docs/processes/as-is-loan-process.md), [TO-BE](docs/processes/to-be-loan-journey.md), [BRD](docs/brd/brd-credit-journey.md), [эпики Jira](docs/backlog/jira-epics-mvp.md). Остальное — по мере ревью.
+Документы публикуются по мере согласования. В финальном виде: [one-pager](docs/one-pager.md), [стейкхолдеры и RACI](docs/stakeholders-raci.md), [AS-IS](docs/processes/as-is-loan-process.md), [TO-BE](docs/processes/to-be-loan-journey.md), [BRD](docs/brd/brd-credit-journey.md), [эпики Jira](docs/backlog/jira-epics-mvp.md), [реестр рисков](docs/risks/risk-register.md). Остальное — по мере ревью.
 
 ## Статус
 
-**Опубликованы:** one-pager, RACI, AS-IS, TO-BE, BRD, эпики MVP (v1.0). Далее: риски и коммуникации.
+**Опубликованы:** one-pager, RACI, AS-IS, TO-BE, BRD, эпики, реестр рисков (v1.0). Далее: план коммуникаций.
