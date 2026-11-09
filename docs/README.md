@@ -1,10 +1,10 @@
 # Документация — Credit Journey
 
-Оглавление артефактов кейса. Файлы со статусом *stub* — заглушки до прохождения ревью.
+Оглавление артефактов кейса.
 
-| Документ | Путь | Status |
+| Документ | Путь | Статус |
 |----------|------|--------|
-| One-pager | [one-pager.md](one-pager.md) | Content coming after review |
+| One-pager | [one-pager.md](one-pager.md) | Согласовано (v1.0) |
 | Стейкхолдеры и RACI | [stakeholders-raci.md](stakeholders-raci.md) | Content coming after review |
 | AS-IS процесс | [processes/as-is-loan-process.md](processes/as-is-loan-process.md) | Content coming after review |
 | TO-BE journey | [processes/to-be-loan-journey.md](processes/to-be-loan-journey.md) | Content coming after review |
