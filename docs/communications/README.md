@@ -1,3 +1,7 @@
-# План коммуникаций — Credit Journey
+# Коммуникации — Credit Journey
 
-**Status:** Content coming after review
+| Документ | Описание |
+|----------|----------|
+| [communication-plan.md](communication-plan.md) | План коммуникаций MVP: аудитории, ритуалы, статус, эскалации |
+
+**Версия плана:** 1.0.
