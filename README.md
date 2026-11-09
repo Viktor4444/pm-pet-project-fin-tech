@@ -36,8 +36,8 @@
 | [docs/risks/](docs/risks/) | Реестр рисков |
 | [docs/communications/](docs/communications/) | План коммуникаций |
 
-Документы публикуются по мере согласования. В финальном виде: [one-pager](docs/one-pager.md), [стейкхолдеры и RACI](docs/stakeholders-raci.md), [AS-IS](docs/processes/as-is-loan-process.md). Остальное — по мере ревью.
+Документы публикуются по мере согласования. В финальном виде: [one-pager](docs/one-pager.md), [стейкхолдеры и RACI](docs/stakeholders-raci.md), [AS-IS](docs/processes/as-is-loan-process.md), [TO-BE](docs/processes/to-be-loan-journey.md). Остальное — по мере ревью.
 
 ## Статус
 
-**Опубликованы:** one-pager v1.0, стейкхолдеры и RACI v1.0, AS-IS v1.0. Остальные артефакты — по одному после ревью.
+**Опубликованы:** one-pager, RACI, AS-IS, TO-BE (все v1.0). Остальные артефакты — по одному после ревью.
