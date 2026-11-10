@@ -2,6 +2,6 @@
 
 | Документ | Описание |
 |----------|----------|
-| [communication-plan.md](communication-plan.md) | План коммуникаций MVP: аудитории, ритуалы, статус, эскалации |
+| [communication-plan.md](communication-plan.md) | План коммуникаций [MVP](../glossary/terms.md#mvp): аудитории, ритуалы, статус, эскалации |
 
 **Версия плана:** 1.0.

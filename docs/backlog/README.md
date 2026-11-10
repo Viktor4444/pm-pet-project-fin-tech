@@ -1,6 +1,6 @@
 # Backlog / эпики — Credit Journey MVP
 
-Нарезка Epic для Jira и контур поставки MVP.
+Нарезка [Epic](../glossary/terms.md#epic) для Jira и контур поставки [MVP](../glossary/terms.md#mvp).
 
 | Документ | Описание |
 |----------|----------|

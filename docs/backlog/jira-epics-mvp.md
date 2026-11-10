@@ -1,8 +1,10 @@
 # Эпики Jira — Credit Journey MVP
 
+> Термины: [epic](../glossary/terms.md#epic) · [backlog](../glossary/terms.md#backlog) · [MVP](../glossary/terms.md#mvp)
+
 **Версия:** 1.0  
 **Дата:** 2026-11-09  
-**Согласовано:** Продуктовый отдел (нарезка backlog) при участии IT-отдела (feasibility) и Отдела QA (E8); Отдел кредитных рисков — consulted по E3/E4  
+**Согласовано:** Продуктовый отдел (нарезка [backlog](../glossary/terms.md#backlog)) при участии IT-отдела (feasibility) и Отдела QA (E8); Отдел кредитных рисков — consulted по E3/E4  
 **Подготовил:** PM / BA  
 
 **Опора:** [BRD](../brd/brd-credit-journey.md), [TO-BE](../processes/to-be-loan-journey.md), [Стейкхолдеры и RACI](../stakeholders-raci.md)  
@@ -12,18 +14,18 @@
 
 ---
 
-## 1. Сводка эпиков
+## 1. Сводка [эпиков](../glossary/terms.md#epic)
 
 | ID | Цель (кратко) | Порядок | Ключевые BR | Ждёт (BRD) | Jira Suggested name |
 |----|---------------|---------|-------------|------------|---------------------|
 | E1 | Заявка + гейт согласий | 1 | BR-01…05 | Q4 (тексты) | `CJ: Application & Consents` |
-| E2 | БКИ на критическом пути | 2 | BR-10, §7–9 | Q2 | `CJ: Credit Bureau Integration` |
-| E3 | Правила approve/decline/MR | 3 | BR-10…12, 15 | Q3 | `CJ: Decision Rules Engine` |
-| E4 | Очередь manual review | 4 | BR-13…16 | Q3, Q6 | `CJ: Manual Review Queue` |
-| E5 | Оффер займа и выдача | 5 | BR-20…24 | Q6 | `CJ: Loan Offer & Disbursement` |
-| E6 | Страхование opt-in | 6 | BR-30…34 | Q4, Q5 | `CJ: Insurance Opt-in Offer` |
+| E2 | [БКИ](../glossary/terms.md#bki) на критическом пути | 2 | BR-10, §7–9 | Q2 | `CJ: Credit Bureau Integration` |
+| E3 | Правила [approve/decline](../glossary/terms.md#approve-decline)/MR | 3 | BR-10…12, 15 | Q3 | `CJ: Decision Rules Engine` |
+| E4 | Очередь [manual review](../glossary/terms.md#manual-review) | 4 | BR-13…16 | Q3, Q6 | `CJ: Manual Review Queue` |
+| E5 | [Оффер](../glossary/terms.md#offer) займа и выдача | 5 | BR-20…24 | Q6 | `CJ: Loan Offer & Disbursement` |
+| E6 | Страхование [opt-in](../glossary/terms.md#opt-in) | 6 | BR-30…34 | Q4, Q5 | `CJ: Insurance Opt-in Offer` |
 | E7 | Мониторинг и алерты | ∥ с E2–E6 | §11, BR-34 | Q2 | `CJ: Integration Monitoring` |
-| E8 | UAT и качество MVP | ∥ / закрытие на gate | §8, §12 | — | `CJ: UAT & MVP Quality Gate` |
+| E8 | [UAT](../glossary/terms.md#uat) и качество MVP | ∥ / закрытие на gate | §8, §12 | — | `CJ: UAT & MVP Quality Gate` |
 
 `CJ` = Credit Journey (префикс для фильтра в Jira).
 
@@ -31,11 +33,11 @@
 
 ## 2. Принципы нарезки
 
-- Эпик = **бизнес-capability / шаг journey**, а не слой («только UI» / «только backend»).
+- Эпик = **бизнес-capability / шаг [journey](../glossary/terms.md#journey)**, а не слой («только UI» / «только backend»).
 - Каждый Must-BR из BRD покрыт ≥1 эпиком; Should (BR-16) — в E4 как метрика / follow-up.
 - Зависимости явны: нельзя закрыть E5 без рабочего решения из E3/E4.
 - В этом документе — **эпики + 1 пример story**; полный бэклог stories — отдельно (в т.ч. через интеграцию с Jira).
-- Out of scope MVP (ML, своё МП, коллекшен, замена АБС, мульти-БКИ) в эпики не кладём.
+- Out of scope MVP (ML, своё МП, коллекшен, замена [АБС](../glossary/terms.md#abs), мульти-БКИ) в эпики не кладём.
 
 ---
 
@@ -63,13 +65,13 @@ E1 Application & Consents
 | | |
 |--|--|
 | **Jira** | Name: `CJ: Application & Consents` |
-| **Цель** | Клиент создаёт заявку; без валидных согласий ПДн+БКИ путь дальше закрыт |
+| **Цель** | Клиент создаёт заявку; без валидных согласий [ПДн](../glossary/terms.md#pdn)+БКИ путь дальше закрыт |
 | **In** | Анкета в канале; гейт согласий; версия текстов; incomplete → дозапрос; запись заявки в АБС |
 | **Out** | Правила скоринга; вызов БКИ; офферы |
 | **BR** | BR-01 … BR-05 |
 | **Ждёт** | Q4 — финальные тексты согласий (Комплаенс) |
 | **Зависит от** | — (старт) |
-| **DoD эпика** | Гейт согласий блокирует переход к БКИ; incomplete не вызывает БКИ; заявка создаётся в АБС |
+| **[DoD](../glossary/terms.md#dor-dod) эпика** | Гейт согласий блокирует переход к БКИ; incomplete не вызывает БКИ; заявка создаётся в АБС |
 | **Пример story** | Как клиент, я подтверждаю согласия ПДн и БКИ, иначе не могу отправить заявку на проверку |
 
 ### E2 — Интеграция БКИ
@@ -81,7 +83,7 @@ E1 Application & Consents
 | **In** | Вызов БКИ API; политика retry/timeout (`[TBD]` из BRD §9); коды `MR_BKI_TIMEOUT` / `MR_BKI_ERROR`; запрет approve без актуального ответа БКИ |
 | **Out** | Бизнес-правила approve/decline; UI оффера |
 | **BR** | BR-10 (входные данные); §7–§9 BRD; fallback → MR |
-| **Ждёт** | Q2 — timeout/retry/SLA |
+| **Ждёт** | Q2 — timeout/retry/[SLA](../glossary/terms.md#sla) |
 | **Зависит от** | E1 |
 | **DoD эпика** | Успешный ответ БКИ передаётся в decision; после исчерпания ретраев — `manual_review` с кодом; нет auto-approve при ошибке/таймауте |
 | **Пример story** | Как система, после N неуспешных попыток БКИ я перевожу заявку в `manual_review` с кодом `MR_BKI_TIMEOUT` |
@@ -107,7 +109,7 @@ E1 Application & Consents
 | **Jira** | Name: `CJ: Manual Review Queue` |
 | **Цель** | Операционный отдел разбирает очередь MR; аудит решения; без approve без актуальной КИ / явного решения оператора |
 | **In** | Очередь; UI/процесс оператора; approve/decline + аудит; регламент |
-| **Out** | Авто-скоринг Phase 2; целевой % MR (BR-16 — Should / `[TBD]`) |
+| **Out** | Авто-скоринг [Phase 2](../glossary/terms.md#phase-2); целевой % MR (BR-16 — Should / `[TBD]`) |
 | **BR** | BR-13, BR-14, BR-15; частично BR-16 |
 | **Ждёт** | Q3, Q6 |
 | **Зависит от** | E3; E2 (технический MR) |
@@ -120,7 +122,7 @@ E1 Application & Consents
 |--|--|
 | **Jira** | Name: `CJ: Loan Offer & Disbursement` |
 | **Цель** | После approve — оффер займа; accept → цепочка к страховке/выдаче; reject — конец; зачисление в АБС |
-| **In** | Показ оффера; accept/reject; идемпотентная выдача; статусы в АБС; задел Time-to-Cash |
+| **In** | Показ оффера; accept/reject; идемпотентная выдача; статусы в АБС; задел [Time-to-Cash](../glossary/terms.md#time-to-cash) |
 | **Out** | Страховой оффер (E6); сложная политика сбоя зачисления (`[TBD]` / Phase 2) |
 | **BR** | BR-20 … BR-24 |
 | **Ждёт** | Q6 — политика сбоя зачисления |
@@ -150,7 +152,7 @@ E1 Application & Consents
 | **Цель** | Базовая наблюдаемость SLA БКИ/страховки, воронки статусов, алерты |
 | **In** | Метрики и алерты из BRD §11; дашборд для IT (Must); продуктовый дашборд (Should) |
 | **Out** | Расширенная отчётность риска/продукта (Phase 2) |
-| **BR** | §11 BRD; поддержка BR-34; KPI-измерение |
+| **BR** | §11 BRD; поддержка BR-34; [KPI](../glossary/terms.md#kpi)-измерение |
 | **Ждёт** | Q2 (пороги SLA для алертов) |
 | **Зависит от** | E2, E5, E6 (сигналы); каркас можно раньше |
 | **DoD эпика** | Базовые метрики БКИ/страховки/выдачи пишутся; алерт по нарушению SLA настраивается (порог `[TBD]`) |
@@ -161,8 +163,8 @@ E1 Application & Consents
 | | |
 |--|--|
 | **Jira** | Name: `CJ: UAT & MVP Quality Gate` |
-| **Цель** | Согласованный тест-план и прогон UAT до go-live |
-| **In** | Чек-листы: approve+страховка; approve без страховки; decline; timeout БКИ→MR; сбой страхового API; reject оффера займа; DoR/DoD |
+| **Цель** | Согласованный тест-план и прогон UAT до [go-live](../glossary/terms.md#go-live) |
+| **In** | Чек-листы: approve+страховка; approve без страховки; decline; timeout БКИ→MR; сбой страхового API; reject оффера займа; [DoR/DoD](../glossary/terms.md#dor-dod) |
 | **Out** | Полная автоматизация регрессии; нагрузочное тестирование |
 | **BR** | BRD §8 UAT list; §12 DoR/DoD |
 | **Ждёт** | — (сценарии уже в BRD; тексты/цифры не блокируют чек-листы) |
