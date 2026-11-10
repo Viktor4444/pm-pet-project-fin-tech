@@ -27,7 +27,7 @@
 | [docs/one-pager.md](docs/one-pager.md) | One-pager: проблема, цели, KPI, scope |
 | [docs/stakeholders-raci.md](docs/stakeholders-raci.md) | Стейкхолдеры и матрица RACI |
 | [docs/processes/](docs/processes/) | AS-IS процесс и TO-BE journey |
-| [docs/brd/](docs/brd/) | BRD — Business Requirements Document |
+| [docs/brd/](docs/brd/) | BRD и open points (ведение TBD) |
 | [docs/backlog/](docs/backlog/) | Эпики / контур backlog MVP |
 | [docs/risks/](docs/risks/) | Реестр рисков |
 | [docs/communications/](docs/communications/) | План коммуникаций |
@@ -43,8 +43,7 @@
 
 Актуальный список того, что ещё появится в портфолио:
 
-- Управление открытыми вопросами требований (open points)
-- Мастер-план MVP (MS Project: вехи, скрин Ганта, CSV в `docs/plan/`)
+- Мастер-план MVP (MS Project: вехи, скрин Ганта, CSV в `docs/plan/`; закрытие TBD «Нужно к» в open points)
 - Jira: эпики `CJ: …` + симуляция исполнения (mirror в git)
 - User stories на 1–2 эпика
 - Связка план ↔ backlog ↔ риски
