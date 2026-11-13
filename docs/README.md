@@ -22,6 +22,7 @@
 | TO-BE journey | [processes/to-be-loan-journey.md](processes/to-be-loan-journey.md) | Согласовано (v1.0) |
 | BRD | [brd/brd-credit-journey.md](brd/brd-credit-journey.md) | Рамка v1.0 согласована (часть входов — Ожидает данных) |
 | Open points | [brd/open-points.md](brd/open-points.md) | Лог Q1–Q7 (ведение TBD) |
+| План MVP | [plan/mvp-schedule.md](plan/mvp-schedule.md) · [plan/gantt-mvp.png](plan/gantt-mvp.png) | v1.1: вехи, волны, скрин Ганта (MS Project B) |
 | Backlog / эпики | [backlog/jira-epics-mvp.md](backlog/jira-epics-mvp.md) | Согласовано (v1.0) |
 | Риски | [risks/risk-register.md](risks/risk-register.md) | Согласовано (v1.0) |
 | Коммуникации | [communications/communication-plan.md](communications/communication-plan.md) | Согласовано (v1.0) |
